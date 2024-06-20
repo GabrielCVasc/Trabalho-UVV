@@ -1,66 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="desktop-1">
-        <div class="rectangle-1">
-        </div>
-        <div class="rectangle-9">
-        </div>
-        <div class="container-4">
-          <div class="container">
-            <div class="rectangle-7">
-            </div>
-          </div>
-          <div class="container-2">
-            <div class="rectangle-8">
-            </div>
-          </div>
-          <div class="container-1">
-            <div class="container-7">
-              <div class="no-possui-uma-conta">
-                Não possui uma conta?
-              </div>
-              <div class="container-5">
-                <div class="rectangle-4">
+    <nav>
+        <div class="desktop-1">
+            <div class="background"></div>
+            <div class="login-container">
+                <div class="image-container">
+                    <div class="image-placeholder"></div>
                 </div>
-                <span class="registrar">
-                  Registrar
-                </span>
-              </div>
-            </div>
-            <div class="login">
-              Login
-            </div>
-            <div class="email">
-              Email:
-            </div>
-            <div class="senha">
-              Senha:
-            </div>
-            <div class="esqueci-minha-senha">
-              Esqueci Minha Senha
-            </div>
-            <div class="container-3">
-              <div class="container-6">
-                <span class="avanar">
-                  Avançar
-                </span>
-              </div>
-              <div class="container-8">
-                <img class="ellipse-1" src="../assets/vectors/ellipse_1_x2.svg" />
-                <div class="lembrar-de-mim">
-                  Lembrar de mim
+                <div class="form-container">
+                    <h1 class="login">Login</h1>
+                    <label for="email" class="label">Email:</label>
+                    <input type="email" id="email" class="input">
+                    <label for="senha" class="label">Senha:</label>
+                    <input type="password" id="senha" class="input">
+                    <div class="actions">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-text">Lembrar de mim</span>
+                        </label>
+                        <a href="#" class="forgot-password">Esqueci Minha Senha</a>
+                    </div>
+                    <button class="action-btn" onclick="redirectTo('paginainicial.html')">AVANÇAR</button>
+                    <div class="register-container">
+                        <span class="register-text">Não possui uma conta?</span>
+                        <a href="cadastre.html" class="register-link">Registrar</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </nav>
+    <script src="script.js"></script>
 </body>
+
 </html>

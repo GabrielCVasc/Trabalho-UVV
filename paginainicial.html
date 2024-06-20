@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="paginainicial.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="fortes_logo.png" alt="Logo" class="logo">
+        <div class="user-info">
+            <img src="perfil-de-usuario.png" alt="User Icon" class="user-icon">
+            <span class="username">Fulano</span>
+            <button class="logout" onclick="redirectTo('index.html')">Sair</button>
+        </div>
+    </header>
+    <main class="main-content">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <span>PAINEL INICIAL</span>
+                </li>
+                <li>
+                    <span>CALENDÁRIO</span>
+                </li>
+                <li>
+                    <span>CHAT</span>
+                </li>
+                <li>
+                    <span>EMAIL</span>
+                </li>
+                <li>
+                    <span onclick="redirectTo('sobre.html')">QUEM SOMOS</span></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="dashboard-content">
+            <h1 class="welcome-message">Olá ******, seja bem-vindo(a)!</h1>
+            <p class="instructions">O que deseja fazer? Selecione uma opção abaixo.</p>
+            <div class="actions">
+                <div class="action-btn">
+                    <img src="painel.png" alt="Dashboard Icon">
+                    <span>Dashboard</span>
+                </div>
+                <div class="action-btn">
+                    <img src="relatorio-de-negocios.png" alt="Report Icon">
+                    <span>Página de Relatorio</span>
+                </div>
+                <div class="action-btn">
+                    <img src="perfil-de-usuario.png" alt="Profile Icon" onclick="redirectTo('perfil.html')">
+                    <span>Página de Perfil</span>
+                </div>
+                <div class="action-btn">
+                    <img src="editar.png" alt="Edital Icon">
+                    <span>Página de Editais</span>
+                </div>
+            </div>
+            <div class="additional-actions">
+                <button class="action-btn special-btn" onclick="redirectTo('cadastroresp.html')">INSCREVA SUA
+                    INSTITUIÇÃO</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>&copy; 2024 Painel</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

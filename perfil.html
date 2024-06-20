@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="fortes_logo.png" alt="Fortes Engenharia">
+        </div>
+        <div class="profile">
+            <div class="profile-picture">
+                <img src="perfil-de-usuario.png" alt="Profile Picture">
+            </div>
+            <div class="email">
+                <p>NOME DO USUÁRIO
+                </p>
+                <p>****@gmail.com</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Configurações do perfil</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="primeiro nome">
+                
+                <label for="logradouro">Logradouro</label>
+                <input type="text" id="logradouro" placeholder="seu logradouro">
+                
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" placeholder="XX. XXX. XXX/0001-XX.">
+                
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="01001-000">
+                
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="sua cidade">
+                
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" placeholder="seu bairro">
+                
+                <label for="telefone1">TELEFONE 1</label>
+                <input type="text" id="telefone1" placeholder="(XX)XXXXX-XXXX">
+                
+                <label for="telefone2">TELEFONE 2</label>
+                <input type="text" id="telefone2" placeholder="(XX)XXXXX-XXXX">
+                
+                <div class="buttons">
+                    <button type="button" onclick="redirectTo('paginainicial.html')">← VOLTAR</button>
+                    <button type="button" onclick="redirectTo('paginainicial.html')">SALVAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
